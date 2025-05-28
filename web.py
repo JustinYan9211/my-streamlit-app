@@ -828,7 +828,7 @@ def plot_bar_chart(labels, values, title):
     fig, ax = plt.subplots(figsize=(8, 5)) # Increased size for better readability
     bars = ax.bar(labels, values, color='skyblue')
     ax.set_title(title + " - 關鍵指標", fontsize=14)
-    ax.tick_params(axis='x', rotation=45, labelsize=10, ha="right") # Rotate and align labels
+    ax.tick_params(axis='x', rotation=45, labelsize=10)  # ✅ 正確
     ax.yaxis.get_major_formatter().set_scientific(False)
 
     # 根據數值範圍調整y軸標籤格式
